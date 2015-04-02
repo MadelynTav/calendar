@@ -64,13 +64,19 @@ public class DateTools {
      */
     public static HashMap<Integer, String> getDayOfWeekNames() {
         HashMap<Integer, String> names = new HashMap<Integer, String>();
-        // FIXME: Write this.
+        names.put(Calendar.MONDAY, "Monday");
+        names.put(Calendar.TUESDAY, "Tuesday");
+        names.put(Calendar.WEDNESDAY, "Wednesday");
+        names.put(Calendar.THURSDAY,"Thursday");
+        names.put(Calendar.FRIDAY,"Friday");
+        names.put(Calendar.SATURDAY, "Saturday");
+        names.put(Calendar.SUNDAY, "Sunday");
         return names;
     }
 
     public static HashMap<Integer, String> getMonthNames() {
         // FIXME: Write this.
-        return null;  // Change this!
+        return null;  // Change this! (Marbella)
     }
 
 }
