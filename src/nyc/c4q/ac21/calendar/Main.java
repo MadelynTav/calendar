@@ -38,6 +38,8 @@ public class Main {
         System.out.println("national holiday: " + holidays.get(date));
         // 4. Show whether this date is in DST.
         boolean isDST = DST.isDST(date);
+        System.out.println("is DST:            " + isDST);
+        // ...
         // ...
 
         // 5. Show the zodiac sign.
