@@ -75,8 +75,24 @@ public class DateTools {
     }
 
     public static HashMap<Integer, String> getMonthNames() {
-        // FIXME: Write this.
-        return null;  // Change this! (Marbella)
-    }
+            // FIXME: Write this.//Marbella
+            HashMap<Integer,String> monthNames = new HashMap();
+
+            monthNames.put(Calendar.JANUARY,"January");
+            monthNames.put(Calendar.FEBRUARY,"February");
+            monthNames.put(Calendar.MARCH,"March");
+            monthNames.put(Calendar.APRIL,"April");
+            monthNames.put(Calendar.MAY,"May");
+            monthNames.put(Calendar.JUNE,"June");
+            monthNames.put(Calendar.JULY,"July");
+            monthNames.put(Calendar.AUGUST,"August");
+            monthNames.put(Calendar.SEPTEMBER,"September");
+            monthNames.put(Calendar.OCTOBER,"October");
+            monthNames.put(Calendar.NOVEMBER,"November");
+            monthNames.put(Calendar.DECEMBER,"December");
+
+
+            return monthNames;
+        }
 
 }
