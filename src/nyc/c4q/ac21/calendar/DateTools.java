@@ -63,6 +63,7 @@ public class DateTools {
      *   A map with keys 'Calendar.MONDAY' through 'Calendar.SUNDAY' with corresponding day names as values.
      */
     public static HashMap<Integer, String> getDayOfWeekNames() {
+        // FIXME: Write this.
         HashMap<Integer, String> names = new HashMap<Integer, String>();
         names.put(Calendar.MONDAY, "Monday");
         names.put(Calendar.TUESDAY, "Tuesday");
@@ -72,27 +73,30 @@ public class DateTools {
         names.put(Calendar.SATURDAY, "Saturday");
         names.put(Calendar.SUNDAY, "Sunday");
         return names;
+
     }
 
     public static HashMap<Integer, String> getMonthNames() {
-            // FIXME: Write this.//Marbella
-            HashMap<Integer,String> monthNames = new HashMap();
+        // FIXME: Write this.
 
-            monthNames.put(Calendar.JANUARY,"January");
-            monthNames.put(Calendar.FEBRUARY,"February");
-            monthNames.put(Calendar.MARCH,"March");
-            monthNames.put(Calendar.APRIL,"April");
-            monthNames.put(Calendar.MAY,"May");
-            monthNames.put(Calendar.JUNE,"June");
-            monthNames.put(Calendar.JULY,"July");
-            monthNames.put(Calendar.AUGUST,"August");
-            monthNames.put(Calendar.SEPTEMBER,"September");
-            monthNames.put(Calendar.OCTOBER,"October");
-            monthNames.put(Calendar.NOVEMBER,"November");
-            monthNames.put(Calendar.DECEMBER,"December");
+        HashMap<Integer,String> monthNames = new HashMap();
+
+        monthNames.put(Calendar.JANUARY,"January");
+        monthNames.put(Calendar.FEBRUARY,"February");
+        monthNames.put(Calendar.MARCH,"March");
+        monthNames.put(Calendar.APRIL,"April");
+        monthNames.put(Calendar.MAY,"May");
+        monthNames.put(Calendar.JUNE,"June");
+        monthNames.put(Calendar.JULY,"July");
+        monthNames.put(Calendar.AUGUST,"August");
+        monthNames.put(Calendar.SEPTEMBER,"September");
+        monthNames.put(Calendar.OCTOBER,"October");
+        monthNames.put(Calendar.NOVEMBER,"November");
+        monthNames.put(Calendar.DECEMBER,"December");
 
 
-            return monthNames;
-        }
+        return monthNames;
+
+    }
 
 }

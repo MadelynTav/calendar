@@ -18,32 +18,38 @@ public class Main {
             return;
         System.out.println();
 
-        System.out.println(DateTools.formatDate(date));
+        System.out.println("Date: "+ DateTools.formatDate(date));
 
         // FIXME: Write the rest of this method!
 
         // 1. Show the day of the week.
         HashMap<Integer, String> dayOfWeekNames = DateTools.getDayOfWeekNames();
-        //date.get(Calendar.DAY_OF_WEEK);
-        //System.out.print(dayOfWeekNames.get(date.get(Calendar.DAY_OF_WEEK)));
+        date.get(Calendar.DAY_OF_WEEK);
+        System.out.print("Day of the Week: "+ dayOfWeekNames.get(date.get(Calendar.DAY_OF_WEEK))+"\n");
+
 
 
         // 2. Show whether this is a work day.
-       // HashMap<Integer, Boolean> workDays = WorkDays.getWorkDays();
+       HashMap<Integer, Boolean> workDays = WorkDays.getWorkDays();
+        boolean isWorkDay = workDays.get(date.get(Calendar.DAY_OF_WEEK));
+        System.out.println("Work Day :"+ isWorkDay);
+
         // ...
 
         // 3. Show whether this is a national holiday, and if so, which.
         HashMap<Calendar, String> holidays = Holidays.getHolidays("National holiday");
         // ...
-        System.out.println("national holiday: " + holidays.get(date));
+        System.out.println("National holiday: " + holidays.get(date));
         // 4. Show whether this date is in DST.
         boolean isDST = DST.isDST(date);
-        System.out.println("is DST:            " + isDST);
+        System.out.println("Is DST:            " + isDST);
         // ...
         // ...
 
         // 5. Show the zodiac sign.
         String zodiacSign = Zodiac.getZodiacSign(date);
+        System.out.println("Zodiac sign: "+zodiacSign);
+        System.out.println("\n");
         // ...
 
         // 6. Print out the monthly calendar.
